@@ -40,5 +40,17 @@ myFavouriteCar = {
   name: "Tesla",
   model: "Y"
 };
-
 console.log("after:", myFavouriteCar);
+
+// functions
+function returnMyName(): string {
+  return myName;
+}
+console.log(returnMyName());
+
+// void
+function sayHello(): void {
+  console.log("Hello");
+}
+
+sayHello();
