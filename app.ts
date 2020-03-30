@@ -10,7 +10,7 @@ let isGoodDeveloper = true; // similar to => let myName: boolean = true
 
 // 2. Explicitly assigning
 let myRealAge: number;
-myRealAge = 22;
+myRealAge = 48;
 // myRealAge = "Twenty Two";
 
 // 3. Array
@@ -52,5 +52,35 @@ console.log(returnMyName());
 function sayHello(): void {
   console.log("Hello");
 }
-
 sayHello();
+
+// arguments type
+function multiply(num1: number, num2: number) {
+  return num1 * num2;
+}
+console.log(multiply(2, 4));
+
+// functions as type, args types order and their type matters
+let myMultiply: (val1: number, val2: number) => number;
+
+// can't do
+// myMultiply = sayHello;
+
+// can do
+myMultiply = multiply;
+console.log(myMultiply(2, 5));
+
+// objects, order of keys doesnt't matter but type does
+let userData: { age: number; name: string } = {
+  name: "Elon",
+  age: 48
+};
+
+// complex object
+let complex: { data: number[]; output: (all: boolean) => number[] } = {
+  data: [1000, 45.65, 543],
+
+  output: function(all: boolean): number[] {
+    return this.data;
+  }
+};
