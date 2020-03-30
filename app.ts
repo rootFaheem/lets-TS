@@ -77,10 +77,42 @@ let userData: { age: number; name: string } = {
 };
 
 // complex object
-let complex: { data: number[]; output: (all: boolean) => number[] } = {
+let complex1: { data: number[]; output: (all: boolean) => number[] } = {
   data: [1000, 45.65, 543],
 
   output: function(all: boolean): number[] {
     return this.data;
   }
 };
+
+// creating custom type
+// type alias
+type Complex = { data: number[]; output: (all: boolean) => number };
+
+// let complex2: Complex = {
+//   data: [200, 453.542, 6224],
+
+//   output: function(all: boolean): number[] {
+//     return this.data;
+//   }
+// };
+
+// union type (to have one of multiple types specified)
+let myRealRealAge: number | string = 27;
+myRealRealAge = "27";
+
+// so, we can't assign boolean value
+// myRealRealAge = true
+
+// Type check
+let finalValue = "A string";
+if (typeof finalValue === "string") {
+  console.log("It's a string");
+} else {
+  console.log("Not a string");
+}
+
+// never
+function neverReturn(): never {
+  throw new Error("An error!");
+}

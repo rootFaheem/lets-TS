@@ -63,9 +63,32 @@ var userData = {
     age: 48
 };
 // complex object
-var complex = {
+var complex1 = {
     data: [1000, 45.65, 543],
     output: function (all) {
         return this.data;
     }
 };
+// let complex2: Complex = {
+//   data: [200, 453.542, 6224],
+//   output: function(all: boolean): number[] {
+//     return this.data;
+//   }
+// };
+// union type (to have one of multiple types specified)
+var myRealRealAge = 27;
+myRealRealAge = "27";
+// so, we can't assign boolean value
+// myRealRealAge = true
+// Type check
+var finalValue = "A string";
+if (typeof finalValue === "string") {
+    console.log("It's a string");
+}
+else {
+    console.log("Not a string");
+}
+// never
+function neverReturn() {
+    throw new Error("An error!");
+}
