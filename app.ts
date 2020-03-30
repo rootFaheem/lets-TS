@@ -116,3 +116,9 @@ if (typeof finalValue === "string") {
 function neverReturn(): never {
   throw new Error("An error!");
 }
+
+// Null type
+let canbeNull: number | null = 13;
+canbeNull = null;
+
+console.log(canbeNull);

@@ -92,3 +92,7 @@ else {
 function neverReturn() {
     throw new Error("An error!");
 }
+// Null type
+var canbeNull = 13;
+canbeNull = null;
+console.log(canbeNull);
