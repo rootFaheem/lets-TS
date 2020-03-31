@@ -14,13 +14,14 @@
 // console.log(myselft);
 
 // Solution
-let bankAccount: { money: number; deposit: (val: number) => void } = {
+type BankAccount = { money: number; deposit: (val: number) => void };
+let bankAccount: BankAccount = {
     money: 2000,
     deposit(value: number) {
         this.money += value;
     }
 };
-let myself = {
+let myself: { name: string; bankAccount: BankAccount; hobbies: string[] } = {
     name: "Elon",
     bankAccount: bankAccount,
     hobbies: ["coding", "Space"]
