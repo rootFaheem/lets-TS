@@ -25,9 +25,9 @@ let myAddress: [string, number] = ["Silicon Valley", 22];
 
 // 5. Enum
 enum Color {
-  Gray, // 0
-  Green = 20,
-  Blue // 21
+    Gray, // 0
+    Green = 20,
+    Blue // 21
 }
 let myColor: Color = Color.Green;
 console.log(myColor);
@@ -37,26 +37,26 @@ let myFavouriteCar: any = "Tesla";
 console.log("before:", myFavouriteCar);
 
 myFavouriteCar = {
-  name: "Tesla",
-  model: "Y"
+    name: "Tesla",
+    model: "Y"
 };
 console.log("after:", myFavouriteCar);
 
 // functions
 function returnMyName(): string {
-  return myName;
+    return myName;
 }
 console.log(returnMyName());
 
 // void
 function sayHello(): void {
-  console.log("Hello");
+    console.log("Hello");
 }
 sayHello();
 
 // arguments type
 function multiply(num1: number, num2: number) {
-  return num1 * num2;
+    return num1 * num2;
 }
 console.log(multiply(2, 4));
 
@@ -72,17 +72,17 @@ console.log(myMultiply(2, 5));
 
 // objects, order of keys doesnt't matter but type does
 let userData: { age: number; name: string } = {
-  name: "Elon",
-  age: 48
+    name: "Elon",
+    age: 48
 };
 
 // complex object
 let complex1: { data: number[]; output: (all: boolean) => number[] } = {
-  data: [1000, 45.65, 543],
+    data: [1000, 45.65, 543],
 
-  output: function(all: boolean): number[] {
-    return this.data;
-  }
+    output: function(all: boolean): number[] {
+        return this.data;
+    }
 };
 
 // creating custom type
@@ -107,14 +107,14 @@ myRealRealAge = "27";
 // Type check
 let finalValue = "A string";
 if (typeof finalValue === "string") {
-  console.log("It's a string");
+    console.log("It's a string");
 } else {
-  console.log("Not a string");
+    console.log("Not a string");
 }
 
 // never
 function neverReturn(): never {
-  throw new Error("An error!");
+    throw new Error("An error!");
 }
 
 // Null type

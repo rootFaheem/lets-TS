@@ -1,16 +1,16 @@
 {
-  "name": "lets_ts",
-  "version": "1.0.0",
-  "description": "Let's TS",
-  "main": "index.js",
-  "repository": "https://github.com/rootFaheem/lets-TS.git",
-  "author": "rootFaheem <faheemtech1@gmail.com>",
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
-  "scripts": {
-    "dev": "lite-server"
-  }
+    "name": "lets_ts",
+    "version": "1.0.0",
+    "description": "Let's TS",
+    "main": "index.js",
+    "repository": "https://github.com/rootFaheem/lets-TS.git",
+    "author": "rootFaheem <faheemtech1@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    },
+    "scripts": {
+        "dev": "lite-server"
+    }
 }
