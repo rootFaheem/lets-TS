@@ -1,4 +1,4 @@
-function controlMe(isTrue: boolean) {
+function controlMe(isTrue: boolean, somethingElse: string) {
     let result: number;
     if (isTrue) {
         result = 12;

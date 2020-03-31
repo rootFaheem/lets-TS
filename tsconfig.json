@@ -62,6 +62,9 @@
 
         /* Advanced Options */
         "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
-        "noEmitOnError": true
+
+        // CUSTOM ADDED
+        "noEmitOnError": true,
+        "noUnusedParameters": true
     }
 }
