@@ -65,7 +65,7 @@ var userData = {
 // complex object
 var complex1 = {
     data: [1000, 45.65, 543],
-    output: function (all) {
+    output: function () {
         return this.data;
     }
 };

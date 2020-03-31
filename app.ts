@@ -77,10 +77,10 @@ let userData: { age: number; name: string } = {
 };
 
 // complex object
-let complex1: { data: number[]; output: (all: boolean) => number[] } = {
+let complex1: { data: number[]; output: () => number[] } = {
     data: [1000, 45.65, 543],
 
-    output: function(all: boolean): number[] {
+    output: function(): number[] {
         return this.data;
     }
 };
